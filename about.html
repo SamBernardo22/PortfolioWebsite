@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Sam Bernardo - About</title>
+    <!-- Google Fonts -->
+    <!---Urbanist-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap" rel="stylesheet">
+    <!--League Spartan-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Urbanist:ital@0;1&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -19,46 +30,43 @@
         </nav>
         <img src="Assets/Images/HeaderGradientBackground.svg" alt="Header Background">
     </header>
-    <main>
-        <article>
-            <section class="introduction">
-                <h1>Hi! I'm Sam.</h1>
-                <p>I'm a Rhode Island based graphic designer and 3D generalist passionate about creating visual experiences that connect and inspire.</p>
-                <p>My work spans logo design, branding, packaging design, 3D visualization, and motion graphics. Whether I'm crafting a brand identity from the ground up or breathing new life into existing concepts, I approach each project with fresh eyes and thoughtful attention to detail.</p>
-                <p>When I’m not behind a screen, you’ll find me exploring the outdoors, drawing inspiration from the world around me to bring it into my creative process.</p>
-            </section>
-            <section class="toolkit">
-                <h2>My Toolkit</h2>
-                <img src="Assets/Images/AboutPage/ProgramToolkitIcons/PhotoshopIcon.svg" alt="Photoshop Logo">
-                <img src="Assets/Images/AboutPage/ProgramToolkitIcons/IllustratorIcon.svg" alt="Illustrator Logo">
-                <img src="Assets/Images/AboutPage/ProgramToolkitIcons/IndesignIcon.svg" alt="InDesign Logo">
-                <img src="Assets/Images/AboutPage/ProgramToolkitIcons/AfterEffectsIcon.svg" alt="After Effects Logo">
-                <img src="Assets/Images/AboutPage/ProgramToolkitIcons/FigmaIcon.svg" alt="Figma Logo">
-                <img src="Assets/Images/AboutPage/ProgramToolkitIcons/BlenderIcon.svg" alt="Blender Logo">
-                <img src="Assets/Images/AboutPage/ProgramToolkitIcons/ClipStudioPaintIcon.svg" alt="Clip Studio Paint Logo">
-            </section> 
-            <section class="call-to-action">
-                <h2>Let's Work Together</h2>
-                <p>I'm currently available for any opportunities, including freelance projects, and graduating in 2026. If you're looking for a designer who combines technical expertise with creative problem-solving and strong interpersonal communication, I'd love to hear about your project.</p>
-                <a href="contact.html">CONTACT ME</a>
-            </section>
-        </article>
-    </main>
-    <aside class="headshot">
-        <img src="Assets/Images/AboutPage/SamHeadshot.png" alt="A headshot of Samantha Bernardo smiling.">
-    </aside>
-    <div class="background-assets">
-        <img src="Assets/Images/AboutPage/PinkAbstractShape-TLC.svg" alt="An abstract pink shape with rounded edges.">
-        <img src="Assets/Images/AboutPage/BigGreenAbstractShape-TRC.svg" alt="A big abstract green shape with rounded edges.">
-        <img src="Assets/Images/AboutPage/SmallPinkAbstractShape-TRC.svg" alt="A small abstract pink shape with rounded edges.">
-        <!--Pink & Green TRC(Top Right Corner) shapes should overlap; pink over green.-->
+    <div class="container">
+        <main>
+            <article>
+                <section class="introduction">
+                    <h1 class="standard">Hi! I'm Sam.</h1>
+                    <p class="bodytxt">I'm a Rhode Island based graphic designer and 3D generalist passionate about creating visual experiences that connect and inspire.</p>
+                    <p class="bodytxt">My work spans logo design, branding, packaging design, 3D visualization, and motion graphics. Whether I'm crafting a brand identity from the ground up or breathing new life into existing concepts, I approach each project with fresh eyes and thoughtful attention to detail.</p>
+                    <p class="bodytxt">When I’m not behind a screen, you’ll find me exploring the outdoors, drawing inspiration from the world around me to bring it into my creative process.</p>
+                </section>
+                <section class="toolkit">
+                    <h2 class="standard">My Toolkit</h2>
+                    <img src="Assets/Images/AboutPage/ProgramToolkitIcons/PhotoshopIcon.svg" alt="Photoshop Logo">
+                    <img src="Assets/Images/AboutPage/ProgramToolkitIcons/IllustratorIcon.svg" alt="Illustrator Logo">
+                    <img src="Assets/Images/AboutPage/ProgramToolkitIcons/IndesignIcon.svg" alt="InDesign Logo">
+                    <img src="Assets/Images/AboutPage/ProgramToolkitIcons/AfterEffectsIcon.svg" alt="After Effects Logo">
+                    <img src="Assets/Images/AboutPage/ProgramToolkitIcons/FigmaIcon.svg" alt="Figma Logo">
+                    <img src="Assets/Images/AboutPage/ProgramToolkitIcons/BlenderIcon.svg" alt="Blender Logo">
+                    <img src="Assets/Images/AboutPage/ProgramToolkitIcons/ClipStudioPaintIcon.svg" alt="Clip Studio Paint Logo">
+                </section> 
+                <section class="call-to-action">
+                    <h2 class="standard">Let's Work Together</h2>
+                    <p class="bodytxt">I'm currently available for any opportunities, including freelance projects, and graduating in 2026. If you're looking for a designer who combines technical expertise with creative problem-solving and strong interpersonal communication, I'd love to hear about your project.</p>
+                    <a href="contact.html">CONTACT ME</a>
+                </section>
+            </article>
+        </main>
+        <aside class="headshot">
+            <img src="Assets/Images/AboutPage/SamHeadshot.png" alt="A headshot of Samantha Bernardo smiling.">
+        </aside>
     </div>
+
     <footer>
-        <!--Currently excluding the 1px separator, it seems like something better handled with CSS rather than an image.-->
-        <p>&copy; Samantha Bernardo 2025</p>
+        <hr class="solid">
+        <p class="copyright">&copy; Samantha Bernardo 2025</p>
         <a href="contact.html">Reach out!</a>
         <p>Site designed and built by Samantha Bernardo.</p>
-        <img src="Assets/Images/FooterGradientBar.svg" alt="A green to pink horizontal gradient along the bottom of the page.">
+        <hr class="bottomline">
     </footer>
 </body>
 </html>

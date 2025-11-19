@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Sam Bernardo - Contact</title>
+    <!-- Google Fonts -->
+    <!---Urbanist-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap" rel="stylesheet">
+    <!--League Spartan-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -21,12 +32,28 @@
     </header>
     <main>
         <article class="contact">
-            <h1>Contact</h1>
-            <p>Whether you're looking for a designer, have questions about me and my work, or just want to connect, it would be great to hear from you! I'm always excited to collaborate on new ideas and help bring your vision to life.</p>
+            <h1 class="standard">Contact</h1>
+            <p class="bodytxt">Whether you're looking for a designer, have questions about me and my work, or just want to connect, it would be great to hear from you! I'm always excited to collaborate on new ideas and help bring your vision to life.</p>
             <a href="Assets/PDFs/[NEEDS UPDATE]Samantha Bernardo Resume.pdf">View my résumé</a>
         </article>
         <aside class="message-field">
-            <!--Currently only somewhat works - will need PHP to function properly-->
+            <form action="action_page.php" method="post">
+                <!--Name Field-->
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <!--Email Field-->
+                <label for="email-address">Email</label><br>
+                <input type="text" id="email-address" name="email-address"><br>
+                <!--Message Subject Field-->
+                <label for="subject">Subject</label><br>
+                <input type="text" id="subject" name="subject"><br>
+                <!--Message Field-->
+                <label for="message">Message</label><br>
+                <input type="text" id="message" name="message"><br>
+                <!--Submit Button-->
+                <input type="submit" value="submit">
+            </form>
+
             <!--REPLACE EMAIL BEFORE PUBLICATION-->
             <form action="mailto:sam.m.b.2022@gmail.com">
                 <!--Name Field-->
@@ -46,18 +73,14 @@
             </form>
         </aside>
     </main>
-    <div class="background-assets">
-        <img src="Assets/Images/ContactPage/BigPinkAbstractShape-TRC.svg" alt="A big abstract pink shape with rounded edges.">
-        <img src="Assets/Images/ContactPage/SmallGreenAbstractShape-TRC.svg" alt="A small abstract green shape with rounded edges.">
-        <!--Green should overlap pink-->
 
-    </div>
     <footer>
-        <!--Currently excluding the 1px separator, it seems like something better handled with CSS rather than an image.-->
-        <p>&copy; Samantha Bernardo 2025</p>
+        <hr class="solid">
+        <p class="copyright">&copy; Samantha Bernardo 2025</p>
         <a href="contact.html">Reach out!</a>
         <p>Site designed and built by Samantha Bernardo.</p>
-        <img src="Assets/Images/FooterGradientBar.svg" alt="A green to pink horizontal gradient along the bottom of the page.">
+        <hr class="bottomline">
     </footer>
+
 </body>
 </html>

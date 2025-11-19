@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Sam Bernardo - Portfolio</title>
+    <!-- Google Fonts -->
+    <!---Urbanist-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap" rel="stylesheet">
+    <!--League Spartan-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -21,35 +32,33 @@
     </header>
     <main>
         <article>
-            <div class="hero-section">
+            <section class="hero">
                 <h1>Hi! I'm Sam, a multidisciplinary graphic designer based in Rhode Island.</h1>
                 <h2>Explore my work!</h2>
-                <img src="Assets/Images/HomePortfolioPage/DownArrow.svg" alt="Down Arrow">
-                <!--Backgroundimage for hero section-->
-                <img src="Assets/Images/HomePortfolioPage/HeroBackground.svg" alt="A smaller pink oval overlapping a larger green oval.">
-            </div>
+                <img class="downarrow" src="Assets/Images/HomePortfolioPage/DownArrow.svg" alt="Down Arrow">
             <section class="portfolio">
-                <a href="project_showcase_gf.html">
+                <a class="gf"href="project_showcase_gf.html">
                     <img src="Assets/Images/HomePortfolioPage/Portfolio Website Buttons-01.png" alt="Orange square with Galactic Fission's wordmark">
                 </a>
-                <a href="project_showcase_es.html">
+                <a class="es" href="project_showcase_es.html">
                     <img src="Assets/Images/HomePortfolioPage/Portfolio Website Buttons-04.png" alt="Periwinkle square with Eccentric Stitch's wordmark">
                 </a>
-                <a href="project_showcase_ft.html">
+                <a class="ft" href="project_showcase_ft.html">
                     <img src="Assets/Images/HomePortfolioPage/Portfolio Website Buttons-03.png" alt="Cyan square titled 'Forma DJR: Deck', with a subheading that reads 'Mock Typebook Sample'">
                 </a>
-                <a href="project_showcase_tl.html">
+                <a class="tl" href="project_showcase_tl.html">
                     <img src="Assets/Images/HomePortfolioPage/Portfolio Website Buttons-02.png" alt="Forest green square with The Lagoon's wordmark">
                 </a>
             </section>
         </article>
     </main>
+
     <footer>
-        <!--Currently excluding the 1px separator, it seems like something better handled with CSS rather than an image.-->
-        <p>&copy; Samantha Bernardo 2025</p>
+        <hr class="solid">
+        <p class="copyright">&copy; Samantha Bernardo 2025</p>
         <a href="contact.html">Reach out!</a>
         <p>Site designed and built by Samantha Bernardo.</p>
-        <img src="Assets/Images/FooterGradientBar.svg" alt="A green to pink horizontal gradient along the bottom of the page.">
+        <hr class="bottomline">
     </footer>
 </body>
 </html>

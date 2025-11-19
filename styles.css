@@ -1,0 +1,151 @@
+/*Home Page Styles*/
+section.hero{
+    text-align: center;
+}
+section.hero img.downarrow {
+    width: 100px;
+    height: auto;
+}
+section.portfolio{
+    display: inline-flexbox;
+    justify-content: center;
+}
+section.portfolio a.gf img {
+    width: 500px;
+    height: auto;
+    border: none;
+}
+section.portfolio a.es img {
+    width: 500px;
+    height: auto;
+    border: none;
+}
+section.portfolio a.ft img {
+    width: 500px;
+    height: auto;
+    border: none;
+}
+section.portfolio a.tl img {
+    width: 500px;
+    height: auto;
+    border: none;
+}
+
+/*About Page Styles*/
+div.container{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+main,
+aside.headshot {
+    flex: 1;
+}
+
+section.toolkit img {
+    width: 75px;
+    height: auto;
+    margin: 10px;
+}
+
+/*Contact Page Styles*/
+main{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+article.contact,
+aside.message-field {
+    flex: 1;
+}
+
+/*Eclectic Stitch Page Styles*/
+
+/*Forma DJR Typebook Page Styles*/
+
+/*Galactic Fission Page Styles*/
+
+/*The Lagoon Page Styles*/
+
+/* Univeral Styles */
+p.bodytxt {
+    font-family: Urbanist,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #001E36;
+}
+/*Urbanist Font Weights: 
+100 - Thin
+200 - Extra Light
+300 - Light
+400 - Regular
+500 - Medium
+600 - Semi Bold
+700 - Bold
+800 - Extra Bold
+900 - Black*/
+
+h1.standard{
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #20615F;
+}
+h2.standard{
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #20615F;
+}
+/*League Spartan Font Weights: 
+100 - Thin
+200 - Extra Light
+300 - Light
+400 - Regular
+500 - Medium
+600 - Semi Bold
+700 - Bold
+800 - Extra Bold
+900 - Black*/
+
+/*Heading & Navigation Bar Style*/
+header {
+    display: inline;
+    img {
+        display: inline-block;
+        width: 75px; 
+        height: auto; 
+    }
+    nav li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    vertical-align:top;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+}
+p.copyright {
+    font-family: urbanist, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:#EDA1CA;
+}
+/* Solid border at the top of footer */
+hr.solid {
+    border-top: 2px solid #EDA1CA;
+}
+/* Gradient bar at the bottom of footer */
+hr.bottomline {
+    height: 15px;
+    width: 100%;
+    background: linear-gradient(90deg,#80BEA7 0%, #EDA1CA 77%);
+    vertical-align: bottom;
+    border: none;
+}
