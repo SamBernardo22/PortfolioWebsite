@@ -16,60 +16,60 @@
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body class="contact">
+    <nav aria-label="Primary Navigation">
         <a href="index.html">
             <img src="Assets/Images/SamBernardoLogo.png" alt="Sam Bernardo's Logo">
         </a>
-        <nav aria-label="Primary Navigation">
-            <ul>
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <img src="Assets/Images/HeaderGradientBackground.svg" alt="Header Background">
-    </header>
-    <main>
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="ab-ct">
         <article class="contact">
             <h1 class="standard">Contact</h1>
             <p class="bodytxt">Whether you're looking for a designer, have questions about me and my work, or just want to connect, it would be great to hear from you! I'm always excited to collaborate on new ideas and help bring your vision to life.</p>
-            <a href="Assets/PDFs/[NEEDS UPDATE]Samantha Bernardo Resume.pdf">View my résumé</a>
+            <a href="Assets/PDFs/Resume-SamanthaBernardo2025.pdf" class="pinkbutton">View my résumé</a>
         </article>
         <aside class="message-field">
+            <!--
+            ***************************** This is commented out incase it becomes relvant as I figure out how to make it a genuinely functional form ***
             <form action="action_page.php" method="post">
-                <!--Name Field-->
+                
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name"><br>
-                <!--Email Field-->
+                
                 <label for="email-address">Email</label><br>
                 <input type="text" id="email-address" name="email-address"><br>
-                <!--Message Subject Field-->
+                
                 <label for="subject">Subject</label><br>
                 <input type="text" id="subject" name="subject"><br>
-                <!--Message Field-->
+                
                 <label for="message">Message</label><br>
                 <input type="text" id="message" name="message"><br>
-                <!--Submit Button-->
+                
                 <input type="submit" value="submit">
-            </form>
+            </form> -->
 
             <!--REPLACE EMAIL BEFORE PUBLICATION-->
             <form action="mailto:sam.m.b.2022@gmail.com">
                 <!--Name Field-->
-                <label for="name">Name</label><br>
+                <label for="name" id="name-label">Name</label><br>
                 <input type="text" id="name" name="name"><br>
                 <!--Email Field-->
-                <label for="email-address">Email</label><br>
+                <label for="email-address" id="email-label">Email</label><br>
                 <input type="text" id="email-address" name="email-address"><br>
                 <!--Message Subject Field-->
-                <label for="subject">Subject</label><br>
+                <label for="subject" id="subject-label">Subject</label><br>
                 <input type="text" id="subject" name="subject"><br>
                 <!--Message Field-->
-                <label for="message">Message</label><br>
-                <input type="text" id="message" name="message"><br>
+                <label for="message" id="message-label">Message</label><br>
+                <textarea rows="10" id="message" name="message"></textarea><br>
                 <!--Submit Button-->
-                <input type="submit" value="submit">
+                <input type="submit" value="submit" class="pinkbutton" style="line-height: 1">
             </form>
         </aside>
     </main>
@@ -81,6 +81,37 @@
         <p>Site designed and built by Samantha Bernardo.</p>
         <hr class="bottomline">
     </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const textareaElement = document.getElementById('message');
+    const labelElement = document.getElementById('message-label');
 
+    textareaElement.addEventListener('focus', function() {
+        labelElement.style.color = '#EDA1CA';
+    });
+
+    textareaElement.addEventListener('blur', function() {
+        labelElement.style.color = '#80BEA7';
+    });
+
+    const inputs = document.querySelectorAll('input[type="text"]');
+
+    inputs.forEach(input => {
+        input.addEventListener('focus', () => {
+            const label = document.querySelector(`label[for="${input.id}"]`) || input.closest('label');
+            if (label) {
+                label.style.color = '#EDA1CA';
+            }
+        });
+
+        input.addEventListener('blur', () => {
+            const label = document.querySelector(`label[for="${input.id}"]`) || input.closest('label');
+            if (label) {
+                label.style.color = '#80BEA7';
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>
