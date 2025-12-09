@@ -8,7 +8,7 @@ header.home{
     background-position: center;
     background-size: contain;
     h1{
-        padding-top: clamp(5px, 4vh, 100px);
+        padding-top: clamp(50px, 5vh, 100px);
         font-family: spartan, sans-serif;
         font-size: clamp(18px, 3vw, 50px);
         font-weight: 700;
@@ -168,25 +168,57 @@ section.description {
     flex: 1;
 }
 article.about-project img{
-    width: 600px;
+    width: 5vw;
     height: auto;
     border-radius: 20px;
     margin-bottom: 15px;
 }
+header article.project-hero-es img{
+    width: 70vw;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+/*Forma DJR Typebook Page Styles*/
 header article.carousel{
     width: 100%;
     display: block;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
+}
+/*Galactic Fission Page Styles*/
+.video-hero-gf {
+    position: relative;
+    margin: 0 auto;
+    margin-left: 20vw;
+    margin-right: auto;
+    width: 80%;
+    height: 0;
+    padding-bottom: 56.25%; /* For a 16:9 aspect ratio (height / width * 100) */
+    overflow: hidden;
 }
 
-/*Forma DJR Typebook Page Styles*/
-
-/*Galactic Fission Page Styles*/
-
+/*iframe{
+    width: auto;
+    height: 600px;
+    display: block;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}*/
 /*The Lagoon Page Styles*/
-
+header article.project-hero-tl img{
+    width: 70vw;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/*Build carousel with close up on inside spreads of menu*/
 /* Universal Styles *********************************/
 p.bodytxt {
     font-family: Urbanist,sans-serif;
@@ -302,39 +334,39 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    img {
-        display: inline;
-        width: 6vw; 
-        height: auto; 
-        padding-left: 35px;
-        padding-top: 15px;
-    }
-    li {
-        display: inline;
-        padding-right: 5vw;
-        float: right;
-        font-family: spartan, sans-serif;
-        font-size: clamp(20px, 2vw, 40px);
-        font-weight: 700;
-        a:link{
-            color: #20615F;
-            text-decoration: none;
-        }
-        a:visited{
-            color: #20615F;
-            text-decoration: none;
-        }
-        a:hover{
-            color: #80BEA7;
-            text-decoration: none;
-        }
-        a:active{
-            color: #EDA1CA;
-            text-decoration: none;
-        }
-    }
     vertical-align:top;
     margin-bottom: 10px;
+}
+nav img {
+    display: inline;
+    width: 6vw; 
+    height: auto; 
+    padding-left: 35px;
+    padding-top: 15px;
+}
+nav li {
+    display: inline;
+    padding-right: 5vw;
+    float: right;
+    font-family: spartan, sans-serif;
+    font-size: clamp(20px, 2vw, 40px);
+    font-weight: 700;
+}
+nav li a:link{
+    color: #20615F;
+    text-decoration: none;
+}
+nav li a:visited{
+    color: #20615F;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: #80BEA7;
+    text-decoration: none;
+} 
+nav li a:active{
+    color: #EDA1CA;
+    text-decoration: none;
 }
 @media (max-width: 800px) {
     nav{
@@ -376,20 +408,20 @@ footer a{
     font-weight: 400;
     color: #80BEA7;
     text-decoration: none;
-    a:visited{
-        color: #80BEA7;
-        text-decoration: none;
-    }   
-    a:hover{
-        font-weight: 800;
-        color: #20615F;
-        text-decoration: none;
-    }
-    a:active{
-        font-weight: 400;
-        color: #EDA1CA;
-        text-decoration: none;
-    }
+}
+footer a:visited{
+    color: #80BEA7;
+    text-decoration: none;
+}   
+footer a:hover{
+    font-weight: 800;
+    color: #20615F;
+    text-decoration: none;
+}
+footer a:active{
+    font-weight: 400;
+    color: #EDA1CA;
+    text-decoration: none;
 }
 p.copyright {
     font-family: urbanist, sans-serif;
