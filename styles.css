@@ -7,33 +7,33 @@ header.home{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    h1{
-        padding-top: clamp(50px, 5vh, 100px);
-        font-family: spartan, sans-serif;
-        font-size: clamp(18px, 3vw, 50px);
-        font-weight: 700;
-        text-transform: capitalize;
-        color:white;
-        margin-block-start: 1vw;
-        margin-block-end: 1vw;
-        padding-right: 10vw;
-        padding-left: 10vw;
-    }
-    h2{
-        font-family: spartan, sans-serif;
-        font-size: clamp(23px, 3vw,  55px);
-        font-weight: 800;
-        text-transform: capitalize;
-        color:white;
-    }
-    img.downarrow{
-        padding-bottom: clamp(5px, 4vh, 50px);
-        width: clamp(50px, 3vw, 75px);
-        height: auto;
-        animation-name: arrowanimation;
-        animation-duration: 3.5s;
-        animation-iteration-count: infinite;
-    }
+}
+header h1{
+    padding-top: clamp(50px, 5vh, 100px);
+    font-family: spartan, sans-serif;
+    font-size: clamp(18px, 3vw, 50px);
+    font-weight: 700;
+    text-transform: capitalize;
+    color:white;
+    margin-block-start: 1vw;
+    margin-block-end: 1vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+header h2{
+    font-family: spartan, sans-serif;
+    font-size: clamp(23px, 3vw,  55px);
+    font-weight: 800;
+    text-transform: capitalize;
+    color:white;
+}
+header img.downarrow{
+    padding-bottom: clamp(5px, 4vh, 50px);
+    width: clamp(50px, 3vw, 75px);
+    height: auto;
+    animation-name: arrowanimation;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
 }
 main.home{
     margin-top: clamp(50px, 5vh, 100px);
@@ -43,7 +43,6 @@ nav, header, main{
     margin-left: auto;
     margin-right: auto;
 }
-
 @keyframes arrowanimation{
     0% {transform: translateY(0px);}
     50% {transform: translateY(15px);}
@@ -380,7 +379,6 @@ nav li a:active{
         }
     }
 }
-
 /* Footer Styles *********************************/
 footer {
     padding-top: 3vw;
