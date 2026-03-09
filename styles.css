@@ -191,13 +191,27 @@ header div.carousel{
 /*Galactic Fission Page Styles*/
 .video-hero-gf {
     position: relative;
+    display: block;
+    justify-content: center;
     margin: 0 auto;
-    margin-left: 20vw;
-    margin-right: auto;
+    border-right: 20vw;
+    border-left: 20vw;
     width: 80%;
-    height: 0;
+    height: auto;
     padding-bottom: 56.25%; /* For a 16:9 aspect ratio (height / width * 100) */
-    overflow: hidden;
+    overflow: auto;
+}
+.display-shot img{
+    width: 70vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    border: 20px solid transparent;
+    padding-bottom: 4vw;
+}
+.about-project img{
+    display: block;
 }
 
 /*The Lagoon Page Styles*/
