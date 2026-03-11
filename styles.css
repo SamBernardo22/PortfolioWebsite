@@ -154,7 +154,7 @@ input[type=submit]{
 }
 
 /*Eclectic Stitch Page Styles*/
-article.about-project{
+article.about-project-es{
     display: flex;
     gap: 100px;
     justify-content: center;
@@ -162,7 +162,7 @@ article.about-project{
     margin-left: 50px;
     margin-right: 55px
 }
-article.about-project img,
+article.about-projec-es img,
 section.description {
     flex: 1;
 }
@@ -188,6 +188,19 @@ header div.carousel{
     justify-content: center;
     margin-bottom: 40px;
 }
+.about-project-ft{
+      display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 55px
+}
+
+article.about-projec-ft img,
+section.description {
+    flex: 1;
+}
 /*Galactic Fission Page Styles*/
 .video-hero-gf {
     position: relative;
@@ -207,12 +220,31 @@ header div.carousel{
     display: block;
     margin: 0 auto;
     justify-content: center;
-    border: 20px solid transparent;
-    padding-bottom: 4vw;
+    border: 10px solid transparent;
+    padding-bottom: 2.25vw;
 }
-.about-project img{
+.about-project-gf section.description-imgs img{
+    width:30vw;
+    height: auto;
+}
+
+.about-project-gf{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 55px
+}
+section.description-imgs{
     display: block;
+    justify-content: left;
+    padding-left: 1.25vw;
 }
+section.description{
+        flex: 1;
+}
+
 
 /*The Lagoon Page Styles*/
 header div.project-hero-tl img{
@@ -222,6 +254,19 @@ header div.project-hero-tl img{
     border-radius: 20px;
     margin: 0 auto;
     margin-bottom: 40px;
+}
+.about-project-tl{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 55px
+}
+
+article.about-projec-tl img,
+section.description {
+    flex: 1;
 }
 /*Build carousel with close up on inside spreads of menu*/
 /* Universal Styles *********************************/
