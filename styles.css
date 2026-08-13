@@ -173,7 +173,7 @@ article.about-project img{
     margin-bottom: 15px;
 }
 header div.project-hero-es img{
-    width: 70vw;
+    width: 750px;
     height: auto;
     display: block;
     border-radius: 20px;
@@ -189,7 +189,7 @@ header div.carousel{
     margin-bottom: 40px;
 }
 .about-project-ft{
-      display: flex;
+    display: flex;
     gap: 100px;
     justify-content: center;
     align-items: flex-start;
@@ -248,7 +248,7 @@ section.description{
 
 /*The Lagoon Page Styles*/
 header div.project-hero-tl img{
-    width: 70vw;
+    width: 750px;
     height: auto;
     display: block;
     border-radius: 20px;
@@ -354,7 +354,7 @@ body{
     border: 0px;
 }
 article.carousel img{
-    width: 700px;
+    width: 800px;
     height: auto;
     border-radius: 20px;
     margin-bottom: 15px;
@@ -494,4 +494,69 @@ hr.bottomline {
     border: none;
     margin-top: 5px;
     margin-bottom: 0;
+}
+
+/*Double Image Styles*/
+div.doubleImg{
+    display:flex;
+    justify-content: center;
+    max-width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
+div.doubleImg img{
+    width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*portfolio page navigation*/
+div.portNav{
+    display: flex;
+    justify-content: space-between;
+    vertical-align:top;
+    margin-bottom: 10px;
+}
+
+.portNav li {
+    display: inline;
+    padding-right: 5vw;
+    float: space-between;
+    font-family: spartan, sans-serif;
+    font-size: clamp(20px, 2vw, 40px);
+    font-weight: 700;
+}
+.portNav li a:link{
+    color: #20615F;
+    text-decoration: none;
+}
+.portNav li a:visited{
+    color: #20615F;
+    text-decoration: none;
+}
+.portNav li a:hover{
+    color: #80BEA7;
+    text-decoration: none;
+} 
+.portNav li a:active{
+    color: #EDA1CA;
+    text-decoration: none;
+}
+@media (max-width: 800px) {
+    .portNav{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        li{
+            display: inline;
+            float: none;
+        }
+        ul{
+            text-align: center;
+        }
+    }
 }
